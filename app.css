@@ -1,0 +1,39 @@
+.container {
+  position: fixed;
+  right: 10px;
+  top: 200px;
+  background-color: gold;
+  text-align: center;
+  z-index: 21;
+  color: chocolate;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container input {
+  margin: 10px;
+  padding: 10px;
+  width: 100px;
+  display: block;
+}
+.container button {
+  z-index: 100;
+  background-color: red;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  top: -19px;
+  right: 5px;
+  box-shadow: -10px 7px 0px 0px white, 4px 9px 0px 0px white;
+}

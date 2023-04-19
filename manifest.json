@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Our Extension",
+  "description": "Our Extension",
+  "version": "1.0",
+  "action": {
+    "default_icon": "iti-logo.png",
+    "default_title": "Our Extension",
+    "default_popup": "iti.html"
+  },
+  "content_scripts": [
+    {
+      "js": ["app.js"],
+      "css": ["app.css"],
+      "matches": [
+        "https://www.youtube.com/playlist?list=*",
+        "https://www.youtube.com/watch?v=*&list=*"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/playlist?list=*",
+    "https://www.youtube.com/watch?v=*&list=*"
+  ]
+}
